@@ -31,6 +31,15 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.container{
+  height: 600px;
+
+}
+.bg {
+  background: url('../img/bg.jpeg') left top no-repeat;
+  background-size: 100% auto;
+}
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
