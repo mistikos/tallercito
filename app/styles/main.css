@@ -1,4 +1,9 @@
 /* Space out content a bit */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 html, body {
       font-size: 100%;
@@ -143,7 +148,7 @@ h1, h2, a, p {
 */
 
 .wrapper{
-  background-color: #FAFAFA;
+  background-color: #F0F0F0;
 }
 .box{
   height: auto;
@@ -243,7 +248,14 @@ p.buttoninterest a{
   width: 90%;
   max-width: 1100px;
   min-width: 800px;
-  margin: 50px auto;
+  margin: 50px auto 80px;
+  margin-bottom: 0px;
+}
+
+.courses h2{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 26px;
 }
 
 
@@ -267,13 +279,15 @@ p.buttoninterest a{
   border: 2px solid #FAFAFA;
   box-shadow: 1px 1px 2px rgba(34, 25, 25, 0.4);
   margin: 0 2px 40px;
-  -webkit-column-break-inside: avoid;
+  /*-webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
-  column-break-inside: avoid;
+  column-break-inside: avoid;*/
   padding: 15px;
   background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
   opacity: 1;
   text-align: center;
+  min-width: 336px;
+  min-height: 272px;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
   -o-transition: all .2s ease;
@@ -305,35 +319,76 @@ p.buttoninterest a{
   color: #585A5B;
 }
 
-.course.basic img{
-  border-bottom: 1px solid #469AE5;
-}
-.course.html img{
-  border-bottom: 1px solid #31A480;
-}
-.course.css img{
-  border-bottom: 1px solid #D7A627;
-}
-.course.javascript img{
-  border-bottom: 1px solid #54588A;
-}
-.course.ruby img{
-  border-bottom: 1px solid #BB3524;
-}
-.course.extra img{
-  border-bottom: 1px solid #585A5B;
-}
-
-
 .course img {
+  border-bottom: 2px solid;
   padding-bottom: 15px;
   margin-bottom: 5px;
   display: inline-block;
 }
 
+.course.basic img{
+  border-color: #469AE5;
+}
+.course.html img{
+  border-color: #31A480;
+}
+.course.css img{
+  border-color: #D7A627;
+}
+.course.javascript img{
+  border-color: #54588A;
+}
+.course.ruby img{
+  border-color: #BB3524;
+}
+.course.extra img{
+  border-color: #585A5B;
+}
+
 .course p {
-  /* Master your Ruby ski: */
   font-size: 16px;
   color: #AFABAB;
   line-height: 24px;
+}
+
+/*section info general*/
+.info{
+  background-color: #fff;
+  padding: 80px 0px;
+}
+
+.info .content{
+  width: 720px;
+  margin: auto;
+  text-align: center;
+}
+
+.info .content img{
+  vertical-align: middle;
+}
+
+.show-pdf{
+  /* Ver contenido Genera: */
+  font-size: 22px;
+  color: #969799;
+  line-height: 26px;
+}
+
+.info .description{
+  /* Lorem ipsum dolor si 2: */
+  font-family: OpenSans-Light;
+  font-size: 24px;
+  color: #7A7878;
+  line-height: 40px;
+  margin: 40px 0px;
+}
+
+footer{
+  text-align: center;
+  background: rgba(215,215,215,0.16);
+  height: 100px;
+}
+
+footer p{
+  padding-top: 40px;
 }
