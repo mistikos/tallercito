@@ -1,88 +1,250 @@
 /* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-
-.container{
-  height: 600px;
-
-}
-.bg {
-  background: url('../img/bg.jpeg') left top no-repeat;
-  background-size: 100% auto;
-}
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
+html, body {
+      font-size: 100%;
+      height: 100%;
   }
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
 
-/* Main marketing message and sign up button */
-.jumbotron {
+ body {
+      background: inherit;
+      color: #444;
+      -webkit-font-smoothing: antialiased;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+      padding: 0;
+      margin: 0;
+      font-family: "Open Sans", "Source Sans Pro", "Helvetica", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1;
+      position: relative;
+      cursor: default;
+  }
+
+/**
+ TYPE RESETS
+ **/
+
+  div, ul, li, h1, h2, h3, h4, h5, h6, form, p, span, {
+      margin: 0;
+      padding: 0;
+      direction: ltr;
+  }
+
+/*link style*/
+  a {
+      color: rgba(13, 83, 128, 1.0);
+      font-weight: 500;
+      text-decoration: none;
+      line-height: inherit;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease;
+  }
+  a:hover, a:focus {
+      color: rgba(44, 168, 249, 1.0);
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease;
+  }
+
+ a.button {
+  display: inline-block;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+  width: auto;
+  font-size: 22px;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid rgba(224, 228, 228, 1.0);
+  color: rgba(224, 228, 228, 1.0);
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
+  a.button.filled {
+      background-color: rgba(224, 228, 228, .4);
+      color: #fff;
+      border: 2px solid rgba(251, 253, 255, 1.0);
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+
+/**
+ PARAGRAPH
+ STYLES
+ **/
+
+
+ p a {
+    -webkit-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -ms-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease;
 }
+p a:hover {
+    color: rgba(14, 118, 199, 1.0);
+}
+
+h1, h2, a, p {
+  font-family: "Open Sans"
+}
+/*header style*/
+/*h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    display: block;
+    color: #efefef;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: .03em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+ h1 {
+      display: block;
+      margin: 0 auto;
+      line-height: 1.1;
+      color: rgba(249, 251, 254, 1.0);
+      font-size: 3.1em;
+      letter-spacing: .02em;
+      margin-bottom: .5em;
+      font-weight: 400;
+      text-align: center;
+      text-shadow: 1px 1px 1px rgba(40, 40, 40, 0.1);
+  }
+  h2 {
+      color: rgba(249, 251, 254, 1.0);
+      text-shadow: 1px 1px 1px rgba(40, 40, 40, 0.1);
+      margin: 0 auto;
+      display: block;
+      width: 70%;
+      font-size: 1.5em;
+      letter-spacing: .03em;
+      text-align: center;
+  }
+
+  h5 {
+      font-size: 1.6em;
+      text-align: center;
+      color: rgba(18, 109, 167, 1.0);
+      width: 65%;
+      margin: .75em auto;
+  }
+  h6 {
+      font-size: 1.2em;
+      text-align: center;
+      width: 55%;
+      color: #444;
+      margin: .75em auto;
+  }
+*/
+
+.wrapper{
+  background-color: #FAFAFA;
+}
+.box{
+  height: auto;
+  background-position: 50% 0em;
+  background-size: 3.5em auto;
+  background-repeat: no-repeat;
+  -moz-box-shadow: inset 0px 1px 1px rgba(27, 25, 22, .1);
+  -webkit-box-shadow: inset 0px 1px 1px rgba(27, 25, 22, .1);
+  box-shadow: inset 0px 1px 1px rgba(27, 25, 22, .1);
+}
+
+.box.target {
+    padding: 40px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    border-radius: 8px;
+    -moz-box-shadow:    0px 1px 3px 0px rgba(228,226,226,0.50);
+    box-shadow:         0px 1px 3px 0px rgba(228,226,226,0.50);
+    width: 720px;
+    margin: 0 auto;
+    margin-top: -100px;
+    height: 120px;
+    color: #7A7878;
+    display: block;
+}
+
+.box.target p{
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+}
+
+.box.homebg{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/background.png');
+  height: 624px;
+}
+
+
+.centerbox.title-advertise{
+  background-color: rgba(0, 0, 0, 0.46);
+  margin-top: 170px;
+  height: 130px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.centerbox.title-advertise h1{
+  /* Taller gratuito para: */
+  font-family: OpenSans-Bold;
+  font-size: 40px;
+  color: #FFFFFF;
+  line-height: 55px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+  margin-top: 16px
+}
+
+.centerbox.title-advertise h2{
+  /* Da el paso e inicia : */
+  font-size: 25px;
+  color: #FFFFFF;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+
+h2.duration_at {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  /* Nov. 16 - Dic. 10: */
+  font-size: 28px;
+  color: #FFFFFF;
+  line-height: 38px;
+}
+
+p.buttoninterest {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1em;
+}
+
+p.buttoninterest a{
+  padding: 18px 74px;
+  /* Me interesa!: */
+  font-weight: bold;
+  font-size: 22px;
+  color: #FFFFFF;
+  line-height: 30px;
+}
+
+/*courses*/
+
+.courses{
+  width: 914px;
+  border: 1px solid red;
+  height: 686px;
+  margin: 0 auto;
+  margin-top: 80px;
+  display: block;
+}
+
