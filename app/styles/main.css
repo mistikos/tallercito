@@ -239,53 +239,83 @@ p.buttoninterest a{
 }
 
 /*courses*/
-
 .courses{
-  width: 914px;
-  border: 1px solid red;
-  height: 686px;
-  margin: 0 auto;
-  margin-top: 80px;
-  display: block;
+  width: 90%;
+  max-width: 1100px;
+  min-width: 800px;
+  margin: 50px auto;
 }
 
 
 #columns {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 10px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 40px;
   -webkit-column-fill: auto;
-  -webkit-column-width: 440px;
-  -moz-column-count: 2;
-  -moz-column-gap: 10px;
+  -moz-column-count: 3;
+  -moz-column-gap: 40px;
   -moz-column-fill: auto;
-  column-count: 2;
-  column-gap: 34px;
+  column-count: 3;
+  column-gap: 40px;
   column-fill: auto;
-  column-width: 440px;
 }
 
-.course{
+
+/*pin*/
+.course {
   display: inline-block;
   background: #FEFEFE;
   border: 2px solid #FAFAFA;
-  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-  margin: 0 2px 15px;
+  box-shadow: 1px 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 0 2px 40px;
   -webkit-column-break-inside: avoid;
   -moz-column-break-inside: avoid;
   column-break-inside: avoid;
   padding: 15px;
-  padding-bottom: 5px;
   background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
   opacity: 1;
+  text-align: center;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
 }
 
+.course h3{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-.course .description{
-  font: 12px/18px Arial, sans-serif;
-  color: #333;
-  margin: 0;
+.course h3.basic{
+  color: #469AE5;
+}
+.course h3.html{
+  color: #31A480;
+}
+.course h3.css{
+  color: #D7A627;
+}
+.course h3.javascript{
+  color: #54588A;
+}
+.course h3.ruby{
+  color: #BB3524;
+}
+.course h3.extra{
+  color: #585A5B;
+}
+
+
+.course img {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.course p {
+  /* Master your Ruby ski: */
+  font-size: 16px;
+  color: #AFABAB;
+  line-height: 24px;
 }
