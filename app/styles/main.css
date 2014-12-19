@@ -286,28 +286,46 @@ p.buttoninterest a{
   font-weight: bold;
 }
 
-.course h3.basic{
+.course.basic h3{
   color: #469AE5;
 }
-.course h3.html{
+.course.html h3{
   color: #31A480;
 }
-.course h3.css{
+.course.css h3{
   color: #D7A627;
 }
-.course h3.javascript{
+.course.javascript h3{
   color: #54588A;
 }
-.course h3.ruby{
+.course.ruby h3{
   color: #BB3524;
 }
-.course h3.extra{
+.course.extra h3{
   color: #585A5B;
+}
+
+.course.basic img{
+  border-bottom: 1px solid #469AE5;
+}
+.course.html img{
+  border-bottom: 1px solid #31A480;
+}
+.course.css img{
+  border-bottom: 1px solid #D7A627;
+}
+.course.javascript img{
+  border-bottom: 1px solid #54588A;
+}
+.course.ruby img{
+  border-bottom: 1px solid #BB3524;
+}
+.course.extra img{
+  border-bottom: 1px solid #585A5B;
 }
 
 
 .course img {
-  border-bottom: 1px solid #ccc;
   padding-bottom: 15px;
   margin-bottom: 5px;
   display: inline-block;
