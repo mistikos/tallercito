@@ -269,6 +269,7 @@ p.buttoninterest a{
   column-count: 3;
   column-gap: 40px;
   column-fill: auto;
+  height: 650px;
 }
 
 
@@ -286,7 +287,7 @@ p.buttoninterest a{
   background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
   opacity: 1;
   text-align: center;
-  min-width: 336px;
+  width: 336px;
   min-height: 272px;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
