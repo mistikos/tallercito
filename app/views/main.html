@@ -6,8 +6,24 @@
     </div>
     <h2 class='duration_at'>Nov. 16 - Dic. 10</h2>
     <p class="buttoninterest">
-      <a class="button filled" href="#" title="Sign Up">Me interesa!</a>
+      <button ng-click="toggleModal()" class="button filled">Me interesa!</button>
+      <!-- <a class="button filled" href="#" title="Sign Up">Me interesa!</a> -->
     </p>
+
+    <!-- <modal title="Login form" visible="showModal">
+      <form role="form">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" />
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </modal> -->
+
   </section>
 
   <section class='box target'>
@@ -65,8 +81,7 @@
           <h3>Extra</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed feugiat consectetur pellentesque. Nam ac elit risussssss
-            ss shsjhs shsj shsj sjs shsjshj ss
+            Sed feugiat consectetur pellentesque
           </p>
         </div>
       </div>
@@ -82,9 +97,18 @@
 
       <p class='description'>El taller constará de 5 sesiones, comienza el 26 de noviembre, será los miércoles de 7:00 p.m a 9:00 p.m. y los sábados de 10:00 a.m. a 12:00 a.m. , totalmente gratuito.</p>
 
-      <div>
-        <img src="/images/map.png" alt="Red leaf" title="Red Leaf" />
-        <span>Av. San Borja Sur 754 - San Borja - Lima
+      <div class='wrapper-location'>
+        <div class='location-map'>
+          <map center="[-12.100699, -76.997875]">
+            <marker
+                position="[-12.100699, -76.997875]"
+                title="Aqui es"
+                draggable="true"
+                visible="true"
+                icon="images/beachflag.png"></marker>
+          </map>
+        </div>
+        <span class='location'>Av. San Borja Sur 754 - San Borja - Lima
           (Referencia: entre las Avenidas Aviación Cdra. 31 y San Luis Cdra. 25.)</span>
       </div>
     </div>
