@@ -351,6 +351,28 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    //build control
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      // heroku: {
+      //     options: {
+      //         remote: 'git@heroku.com:dry-chamber-1376.git',
+      //         branch: 'master'
+      //     }
+      // }
+      pages: {
+        options: {
+          remote: 'git@github.com:mistikos/tallercito.git',
+          branch: 'gh-pages'
+        }
+      }
     }
   });
 
@@ -405,4 +427,7 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.registerTask('deploy', ['buildcontrol']);
+
 };
