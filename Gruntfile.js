@@ -143,7 +143,7 @@ module.exports = function (grunt) {
             '!<%= yeoman.dist %>/Procfile',
             '!<%= yeoman.dist %>/package.json',
             '!<%= yeoman.dist %>/server.js',
-            '!<%= yeoman.dist %>/node_modules{,*/}*'
+            '!<%= yeoman.dist %>/node_modules'
           ]
         }]
       },
@@ -366,12 +366,12 @@ module.exports = function (grunt) {
         push: true,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
       },
-      // heroku: {
-      //   options: {
-      //     remote: 'https://git.heroku.com/tallercito.git',
-      //     branch: 'master'
-      //   }
-      // },
+      heroku: {
+        options: {
+          remote: 'https://git.heroku.com/tallercito.git',
+          branch: 'master'
+        }
+      },
       pages: {
         options: {
           remote: 'git@github.com:mistikos/tallercito.git',
