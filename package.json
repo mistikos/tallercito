@@ -1,0 +1,30 @@
+{
+  "name": "tallercito",
+  "version": "0.0.1",
+  "description": "Taller gratuito para entusiastas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mistikos/tallercito.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javscript",
+    "ruby"
+  ],
+  "author": "@videmor & @angelsystem",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/mistikos/tallercito/issues"
+  },
+  "homepage": "https://github.com/mistikos/tallercito",
+  "dependencies": {
+    "morgan": "~1.5.0",
+    "gzippo": "~0.2.0",
+    "express": "~4.10.6"
+  }
+}
