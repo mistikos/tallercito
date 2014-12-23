@@ -371,7 +371,7 @@ module.exports = function (grunt) {
           remote: 'https://git.heroku.com/tallercito.git',
           branch: 'master'
         }
-      }
+      },
       pages: {
         options: {
           remote: 'git@github.com:mistikos/tallercito.git',
