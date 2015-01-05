@@ -67,11 +67,17 @@ html, body {
   color: rgba(224, 228, 228, 1.0);
 }
 
-  button.button.filled {
-      background-color: rgba(224, 228, 228, .4);
-      color: #fff;
-      border: 2px solid rgba(251, 253, 255, 1.0);
-  }
+button.button.filled {
+  background-color: rgba(224, 228, 228, .4);
+  color: #fff;
+  border: 2px solid rgba(251, 253, 255, 1.0);
+}
+
+button.button.filled:hover {
+  background-color: rgba(224, 228, 228, .6);
+  color: #fff;
+  border: 2px solid rgba(251, 253, 255, 1.0);
+}
 
 /**
  PARAGRAPH
