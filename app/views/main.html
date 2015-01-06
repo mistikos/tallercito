@@ -8,26 +8,22 @@
     <p class="buttoninterest">
       <button ng-click="toggleModal()" class="button filled">Me interesa!</button>
     </p>
-
   </section>
 
   <section class='box target'>
     <div class="description-box">
-        <p>Dirigido a toda persona(mayor de 16 años) sin distinción de género, con ganas de aprender a crear aplicaciones de una manera práctica y sencilla #SinLlorar :’)</p>
-      </div>
+      <p>Dirigido a toda persona(mayor de 16 años) sin distinción de género, con ganas de aprender a crear aplicaciones de una manera práctica y sencilla #SinLlorar :’)</p>
+    </div>
   </section>
 
   <section class='wrapp-courses'>
     <div class="courses">
       <h2>Aprende de una manera rápida y práctica</h2>
       <div id="columns">
-
         <div class='course {{course.name}}' ng-repeat='course in courses'>
-          <img src="images/logos/{{course.name}}.png" />
+          <img ng-src="{{course.url}}{{course.name}}" />
           <h3>{{course.title}}</h3>
-          <p>
-            {{course.content}}
-          </p>
+          <p>{{course.content}}</p>
         </div>
     </div>
   </section>
@@ -47,10 +43,10 @@
         <div class='location-map'>
           <map center="[-12.100699, -76.997875]">
             <marker
-                position="[-12.100699, -76.997875]"
-                title="Aqui es"
-                draggable="true"
-                visible="true"></marker>
+              position="[-12.100699, -76.997875]"
+              title="Aqui es"
+              draggable="true"
+              visible="true"></marker>
           </map>
         </div>
         <span class='location'>Av. San Borja Sur 754 - San Borja - Lima
@@ -58,4 +54,5 @@
       </div>
     </div>
   </section>
+
 </div>

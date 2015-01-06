@@ -16,6 +16,8 @@ angular.module('landingApp')
       'Karma'
     ];
 
+    $scope.url = 'images/logos/'
+
     $scope.courses = [
       {name: 'basic', title: 'Básico', content: 'Manejaremos las herramientas fundamentales y sus diferencias entre ellas.'},
       {name: 'javascript', title: 'Javascript', content: 'Aprenderás lo basíco de javascript para dar una mayor interactividad a tu sitio.'},
