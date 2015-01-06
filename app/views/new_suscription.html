@@ -25,10 +25,10 @@
       <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
       <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='92183d1e9bd5a7cbebf40ec86'">
       <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='2588adc563'">
-      <input type="text" name="fname" ng-model="mailchimp.fname" placeholder="First name">
-      <input type="text" name="lname" ng-model="mailchimp.lname" placeholder="Last name">
-      <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email address" required>
-      <button ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">Join</button>
+      <input type="text" name="fname" ng-model="mailchimp.fname" placeholder="Nombres">
+      <input type="text" name="lname" ng-model="mailchimp.lname" placeholder="Apellidos">
+      <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email" required>
+      <button ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">Suscribirme</button>
     </div>
 
     <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
