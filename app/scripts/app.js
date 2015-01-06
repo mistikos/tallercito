@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ngMap',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'mailchimp'
   ])
   .config(function ($routeProvider) {
     $routeProvider

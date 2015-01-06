@@ -1,19 +1,44 @@
 <div class="modal-header">
     <h4 class="modal-title">Me interesa!</h3>
 </div>
-<form role="form">
-    <div class="modal-body">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Nombre</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre completo">
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Email</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Tu correo">
-      </div>
+<!-- <form role="form"> -->
+<!--     <div class="modal&#45;body"> -->
+<!--       <div class="form&#45;group"> -->
+<!--         <label for="exampleInputEmail1">Nombre</label> -->
+<!--         <input type="email" class="form&#45;control" id="exampleInputEmail1" placeholder="Nombre completo"> -->
+<!--       </div> -->
+<!--       <div class="form&#45;group"> -->
+<!--         <label for="exampleInputPassword1">Email</label> -->
+<!--         <input type="password" class="form&#45;control" id="exampleInputPassword1" placeholder="Tu correo"> -->
+<!--       </div> -->
+<!--     </div> -->
+<!--     <div class="modal&#45;footer"> -->
+<!--         <button type="submit" ng&#45;click="ok()" class="btn btn&#45;primary">Suscribirme</button> -->
+<!--         <button class="btn btn&#45;warning" ng&#45;click="cancel()">Cancel</button> -->
+<!--     </div> -->
+<!-- </form> -->
+
+<div class="modal-body">
+  <form name="MailchimpSubscriptionForm" ng-controller="MailchimpSubscriptionCtrl">
+    <div ng-hide="mailchimp.result === 'success'">
+      <input class="hidden" type="hidden" ng-model="mailchimp.username" ng-init="mailchimp.username='github'">
+      <input class="hidden" type="hidden" ng-model="mailchimp.dc" ng-init="mailchimp.dc='us9'">
+      <input class="hidden" type="hidden" ng-model="mailchimp.u" ng-init="mailchimp.u='92183d1e9bd5a7cbebf40ec86'">
+      <input class="hidden" type="hidden" ng-model="mailchimp.id" ng-init="mailchimp.id='2588adc563'">
+      <input type="text" name="fname" ng-model="mailchimp.fname" placeholder="First name">
+      <input type="text" name="lname" ng-model="mailchimp.lname" placeholder="Last name">
+      <input type="email" name="email" ng-model="mailchimp.email" placeholder="Email address" required>
+      <button ng-disabled="MailchimpSubscriptionForm.$invalid" ng-click="addSubscription(mailchimp)">Join</button>
     </div>
-    <div class="modal-footer">
-        <button type="submit" ng-click="ok()" class="btn btn-primary">Suscribirme</button>
-        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+
+    <!-- Show error message if MailChimp unsuccessfully added the email to the list. -->
+    <div ng-show="mailchimp.result === 'error'" ng-cloak>
+      <span ng-bind-html="mailchimp.errorMessage"></span>
     </div>
-</form>
+
+    <!-- Show success message if MailChimp returned successfully. -->
+    <div ng-show="mailchimp.result === 'success'" ng-cloak>
+      <span ng-bind-html="mailchimp.successMessage"></span>
+    </div>
+  </form>
+</div>
