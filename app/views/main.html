@@ -21,54 +21,14 @@
     <div class="courses">
       <h2>Aprende de una manera rápida y práctica</h2>
       <div id="columns">
-        <div class='course basic'>
-          <img src="images/logos/basic.png" />
-          <h3>Básico</h3>
-          <p>
-            Manejaremos las herramientas fundamentales y sus diferencias entre ellas.
-          </p>
-        </div>
 
-        <div class='course javascript'>
-          <img src="images/logos/javascript.png" />
-          <h3>Javascript</h3>
+        <div class='course {{course.name}}' ng-repeat='course in courses'>
+          <img src="images/logos/{{course.name}}.png" />
+          <h3>{{course.title}}</h3>
           <p>
-            Aprenderás lo basíco de javascript para dar una mayor interactividad a tu sitio.
+            {{course.content}}
           </p>
         </div>
-
-        <div class='course html'>
-          <img src="images/logos/html.png" />
-          <h3>HTML</h3>
-          <p>
-            Aprende lo fundamendal de HTML creando un pequeño sitio web.
-          </p>
-        </div>
-
-        <div class='course ruby'>
-          <img src="images/logos/ruby.png" />
-          <h3>Ruby</h3>
-          <p>
-            Tu meta será aprender Ruby, su sintáxis, estructura, funciones y librerías.
-          </p>
-        </div>
-
-        <div class='course css'>
-          <img src="images/logos/css.png" />
-          <h3>CSS</h3>
-          <p>
-            Podrás crear sitios impresionantes, todo lo que necesitas es un poco de creatividad y tener un entendimiento sólido del css.
-          </p>
-        </div>
-
-        <div class='course extra'>
-          <img src="images/logos/extra.png" />
-          <h3>Extra</h3>
-          <p>
-            Verás como hacer prototipos funcionales para smartphone, crear sitios dínamicos con Ruby on Rails y algo de angular.
-          </p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -76,7 +36,7 @@
     <div class="content">
       <div>
         <img src="images/icon-pdf.png" alt="">
-        <a href='files/contenido.pdf' download='contenido.pdf' target='_blank'>
+        <a href='files/contenido.pdf' target='_self'>
           <span class='show-pdf'>Ver contenido General</span>
         </a>
       </div>
