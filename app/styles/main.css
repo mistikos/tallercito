@@ -56,7 +56,7 @@ html, body {
       transition: all .5s ease;
   }
 
- button.button {
+ a.button {
   display: inline-block;
   text-align: center;
   width: auto;
@@ -67,13 +67,13 @@ html, body {
   color: rgba(224, 228, 228, 1.0);
 }
 
-button.button.filled {
+a.button.filled {
   background-color: rgba(224, 228, 228, .4);
   color: #fff;
   border: 2px solid rgba(251, 253, 255, 1.0);
 }
 
-button.button.filled:hover {
+a.button.filled:hover {
   background-color: rgba(224, 228, 228, .6);
   color: #fff;
   border: 2px solid rgba(251, 253, 255, 1.0);
@@ -99,59 +99,6 @@ p a:hover {
 h1, h2, a, p {
   font-family: "Open Sans"
 }
-/*header style*/
-/*h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    display: block;
-    color: #efefef;
-    text-rendering: optimizeLegibility;
-    text-align: center;
-    line-height: 1.2;
-    letter-spacing: .03em;
-    margin: 0 auto;
-    text-align: center;
-}
-
-
- h1 {
-      display: block;
-      margin: 0 auto;
-      line-height: 1.1;
-      color: rgba(249, 251, 254, 1.0);
-      font-size: 3.1em;
-      letter-spacing: .02em;
-      margin-bottom: .5em;
-      font-weight: 400;
-      text-align: center;
-      text-shadow: 1px 1px 1px rgba(40, 40, 40, 0.1);
-  }
-  h2 {
-      color: rgba(249, 251, 254, 1.0);
-      text-shadow: 1px 1px 1px rgba(40, 40, 40, 0.1);
-      margin: 0 auto;
-      display: block;
-      width: 70%;
-      font-size: 1.5em;
-      letter-spacing: .03em;
-      text-align: center;
-  }
-
-  h5 {
-      font-size: 1.6em;
-      text-align: center;
-      color: rgba(18, 109, 167, 1.0);
-      width: 65%;
-      margin: .75em auto;
-  }
-  h6 {
-      font-size: 1.2em;
-      text-align: center;
-      width: 55%;
-      color: #444;
-      margin: .75em auto;
-  }
-*/
 
 .wrapper{
   background-color: #F0F0F0;
@@ -168,7 +115,7 @@ h1, h2, a, p {
 }
 
 .box.target {
-    padding: 40px;
+    padding: 30px;
     background: #FFFFFF;
     border: 1px solid #979797;
     border-radius: 8px;
@@ -179,7 +126,6 @@ h1, h2, a, p {
     margin-top: -100px;
     color: #7A7878;
     display: block;
-    height: 200px;
 }
 
 .box.target p{
@@ -241,7 +187,7 @@ p.buttoninterest {
   margin-top: 1em;
 }
 
-p.buttoninterest button{
+p.buttoninterest a{
   padding: 18px 74px;
   /* Me interesa!: */
   font-weight: bold;
@@ -256,10 +202,10 @@ p.buttoninterest button{
   max-width: 1100px;
   min-width: 800px;
   margin: 50px auto 80px;
-  margin-bottom: 0px;
+  margin-bottom: 80px;
 }
 
-.courses h2{
+.courses h2, .content h2{
   text-align: center;
   margin-bottom: 30px;
   font-size: 26px;
@@ -365,17 +311,16 @@ p.buttoninterest button{
 
 /*section info general*/
 .info{
-  background-color: #fff;
   padding: 80px 0px;
 }
 
-.info .content{
+.info .content, .objective .content{
   width: 740px;
   margin: auto;
   text-align: center;
 }
 
-.info .content img{
+.courses .content img{
   vertical-align: sub;
 }
 
@@ -386,7 +331,7 @@ p.buttoninterest button{
   line-height: 26px;
 }
 
-.info .description{
+.info .description, .objective .description{
   /* Lorem ipsum dolor si 2: */
   font-family: OpenSans-Light;
   font-size: 24px;
@@ -429,6 +374,21 @@ footer p{
   line-height: 24px;
 }
 
+p.place{
+  color: rgb(102, 97, 97);
+  font-size: 22px;
+}
+
+.courses .download-content{
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+.objective{
+  background-color: #fff;
+  padding: 80px 0px;
+}
 
 
 @media only screen  and (min-device-width : 320px) and (max-device-width : 568px) {
@@ -463,7 +423,7 @@ footer p{
     width: 100%;
   }
 
-  .courses h2{
+  .courses h2, .content h2{
     padding: 0px 10px;
   }
 
