@@ -412,6 +412,10 @@ p.place{
   vertical-align: sub;
 }
 
+.profile-info{
+  margin-top: 10px;
+}
+
 
 @media only screen  and (min-device-width : 320px) and (max-device-width : 568px) {
   #columns {
@@ -469,7 +473,7 @@ p.place{
     padding: 30px 0px;
   }
 
-  .info .content, .objective .content {
+  .info .content, .objective .content, .instructors .content {
     width: 100%;
   }
 
@@ -489,5 +493,15 @@ p.place{
 
   .courses .download-content{
     padding: 15px 0px;
+  }
+
+  .profile-column .first{
+    border-right: 0px;
+    border-bottom: 2px solid rgba(194, 194, 194, 0.57);
+    padding-bottom: 20px;
+  }
+
+  .profile-column{
+    display: table-row;
   }
 }
