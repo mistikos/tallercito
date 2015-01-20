@@ -175,7 +175,7 @@ h1, h2, a, p {
 h2.duration_at {
   margin: 0 auto;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
   /* Nov. 16 - Dic. 10: */
   font-size: 28px;
   color: #FFFFFF;
@@ -414,6 +414,11 @@ p.place{
 
 .profile-info{
   margin-top: 10px;
+}
+
+#social{
+  text-align: center;
+  margin-top: 20px;
 }
 
 
