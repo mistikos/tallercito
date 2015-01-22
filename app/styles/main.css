@@ -56,7 +56,7 @@ html, body {
       transition: all .5s ease;
   }
 
- a.button {
+ .button {
   display: inline-block;
   text-align: center;
   width: auto;
@@ -67,14 +67,14 @@ html, body {
   color: rgba(224, 228, 228, 1.0);
 }
 
-a.button.filled {
-  background-color: rgba(224, 228, 228, .4);
+.button.filled {
+  background-color: rgba(224, 228, 228, 0.15);
   color: #fff;
-  border: 2px solid rgba(251, 253, 255, 1.0);
+  border: 2px solid rgba(251, 253, 255, 0.65);
 }
 
-a.button.filled:hover {
-  background-color: rgba(224, 228, 228, .6);
+.button.filled:hover {
+  background-color: rgba(224, 228, 228, 0.30);
   color: #fff;
   border: 2px solid rgba(251, 253, 255, 1.0);
 }
@@ -127,6 +127,7 @@ h1, h2, a, p {
     margin-top: -100px;
     color: #7A7878;
     display: block;
+    position: relative;
 }
 
 .box.target p{
@@ -138,15 +139,21 @@ h1, h2, a, p {
 .box.homebg{
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../images/background.png');
+  background-image: url('../images/background.jpg');
+  background-position: 2% 100%;
   width: 100%;
   height: 624px;
 }
 
+.layer-alpha{
+  background-color: rgba(4, 8, 31, 0.61);
+  width: 100%;
+  display: inline-block;
+  height: 100%
+}
 
 .centerbox.title-advertise{
-  background-color: rgba(0, 0, 0, 0.46);
-  margin-top: 170px;
+  margin-top: 90px;
   padding: 25px 0px;
   width: 100%;
   display: inline-block;
@@ -172,14 +179,17 @@ h1, h2, a, p {
 }
 
 
-h2.duration_at {
+.cupos_complete {
   margin: 0 auto;
   text-align: center;
-  margin-top: 30px;
-  /* Nov. 16 - Dic. 10: */
-  font-size: 28px;
-  color: #FFFFFF;
-  line-height: 38px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #FADD3F;
+}
+
+.cupos_complete h2{
+  line-height: 45px;
 }
 
 p.buttoninterest {
@@ -188,9 +198,8 @@ p.buttoninterest {
   margin-top: 1em;
 }
 
-p.buttoninterest a{
+p.buttoninterest .button{
   padding: 18px 74px;
-  /* Me interesa!: */
   font-weight: bold;
   font-size: 22px;
   color: #FFFFFF;
@@ -416,6 +425,21 @@ p.place{
   margin-top: 10px;
 }
 
+.modal-dialog-center { /* Edited classname 10/03/2014 */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.form-control{
+  height: 42px;
+}
+
+.modal-title{
+  color: #8A8A8A;
+  font-size: 20px;
+}
 
 @media only screen  and (min-device-width : 320px) and (max-device-width : 568px) {
   #columns {
