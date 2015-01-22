@@ -450,6 +450,10 @@ p.place{
 
 
 @media only screen  and (min-device-width : 320px) and (max-device-width : 568px) {
+  .centerbox.title-advertise{
+    margin-top: 50px;
+  }
+
   #columns {
     -webkit-column-count: 1;
     -webkit-column-gap: 40px;
@@ -535,5 +539,15 @@ p.place{
 
   .profile-column{
     display: table-row;
+  }
+
+  .cupos_complete {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .cupos_complete h2{
+    line-height: 30px;
   }
 }
